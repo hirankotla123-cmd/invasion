@@ -1,4 +1,3 @@
-// Contact form simulation
 document.getElementById("contactForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -7,10 +6,10 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
   const message = document.getElementById("message").value.trim();
 
   if (!name || !email || !message) {
-    alert("Please fill out all fields.");
+    alert("Please fill out all fields before submitting.");
     return;
   }
 
-  alert(`Thank you, ${name}. Your message has been sent successfully!`);
+  alert(`Thank you, ${name}. Your message has been sent to Adv. Ramanaiah Kotla.`);
   this.reset();
 });
